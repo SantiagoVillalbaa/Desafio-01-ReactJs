@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 
 .App-link {
   color: #61dafb;
-}
+} 
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.navbar-contenedor {
+  background-color: #51c8e9;
+  height: 100%;
+}
+
+.logoNombre {
+  display: flex;
+  justify-content: left;
+}
+
+.logoNombre h2 {
+  margin-left: 30px;
+  margin-top: 80px;
+  font-size: 30px;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  color: white;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: right;
+}
+.navegacion li a {
+  text-decoration: none;
+  padding: 0 13px; 
+  display: block;
+  font-size: 18px;
+  color: white;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.navegacion li {
+  display: inline-block;
+}
+
+.navegacion li a:hover {
+  background-color: #0e0caa;
+  transition: 0.4s;
 }
