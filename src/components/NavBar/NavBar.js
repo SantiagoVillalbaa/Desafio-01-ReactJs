@@ -1,5 +1,8 @@
-/* import logo from '../logo.svg' */
-import logo from '../logo.jpeg'
+import logo from '../../img/logo.jpeg';
+import './NavBar.css';
+import CartWiget from '../CardWiget/CartWiget';
+
+
 
 const NavBar = () => {
     return (
@@ -10,9 +13,9 @@ const NavBar = () => {
             </div>
             <ul className='navegacion'>
                 <li><a href='#'>Belleza</a></li>
-                <li><a href='#'>Bebes</a></li>
                 <li><a href='#'>Ciudado Personal</a></li>
                 <li><a href='#'>Hogar y Alimentos</a></li>
+                <CartWiget/>
             </ul>
         </header>
     )
