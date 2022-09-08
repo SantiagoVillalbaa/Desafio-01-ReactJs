@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@600&display=swap');
+
+
+.card-productos{
+    width: 350px;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+.card-productos img{
+    width: 180px;
+    height: auto;
+}
+
+
+.titulo-cards{
+    font-size: 25px;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+.precio-cards{
+    font-size: 19px;
+}
+
+.boton-sumar-restar {
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 30px #0d0f47 ; 
+    font-weight: bold;
+    font-size: 16px;
+    color: #0d0f47;
+}
+
+.boton-comprar{
+    border: 1px solid #0d0f47;
+    padding: 5px;
+    background-color: #0d0f47;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px #0d0f47;;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    font-size: 12px;
+}
