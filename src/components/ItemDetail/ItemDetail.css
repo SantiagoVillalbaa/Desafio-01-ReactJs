@@ -2,9 +2,10 @@
 
 
 .card-productos{
+    margin-left: 35%;
     width: 350px;
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     transition: all 400ms ease;
 }
 

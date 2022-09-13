@@ -4,6 +4,7 @@ const data = [
         title:'Shampoo Dove',
         price:460,
         stock:5,
+        description:'Shampoo Dove Regeneración Extrema x 400 ml',
         image:'https://farmacityar.vteximg.com.br/arquivos/ids/204203-600-600/215076_shampoo-dove-regeneracion-extrema-x-400-ml_imagen-1.jpg?v=637384690039770000'
     },
     {
@@ -11,6 +12,7 @@ const data = [
         title:'Shampoo Pantene',
         price:685,
         stock:12,
+        description:'Shampoo Pantene Regeneración Extrema x 400 ml',
         image:'https://farmacityar.vteximg.com.br/arquivos/ids/213102-600-600/153321_shampoo-pantene-max-pro-v-hidro-cauterizacion-x-400-ml_imagen-1.jpg?v=637631672248400000'
     },
     {
@@ -18,6 +20,7 @@ const data = [
         title:'Shampoo Garnier',
         price:499,
         stock:8,
+        description:'Shampoo Garnier Regeneración Extrema x 400 ml',
         image:'https://farmacityar.vteximg.com.br/arquivos/ids/216768-600-600/163843_shampoo-fructis-oil-repair-botella-x-350-ml_imagen-1.jpg?v=637709539007800000'
     },
     {
@@ -25,6 +28,7 @@ const data = [
         title:'Shampoo Elvive',
         price:560,
         stock:10,
+        description:'Shampoo Elvive Regeneración Extrema x 400 ml',
         image:'https://farmacityar.vteximg.com.br/arquivos/ids/205708-600-600/147253_shampoo-oleo-extraordinario-nutricion-universal-x-400-ml_imagen-1.jpg?v=637423402423030000'
     }
 ]
