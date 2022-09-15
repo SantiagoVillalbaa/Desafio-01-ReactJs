@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
-import ItemDetail from "../ItemDetail/ItemDetail";
-import data from "../ItemListContainer/mockData";
+import ItemDetail from "../../components/ItemDetail/ItemDetail";
+import data from "../../components/ItemListContainer/mockData";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
+    const {id} = useParams()
+    
     const [product, setProduct] = useState([])
 
     useEffect(() => {
         getProduct.then((response) => {
-            setProduct(response.find((item)=> item.id === '1'))
+            const dataFiltrada =response.filter((item)=> item.id === id)
+            setProduct(...dataFiltrada)
         })
         .catch((error) =>console.log(error))
     }, [])
@@ -20,9 +24,9 @@ const ItemDetailContainer = () => {
         })
 
     return (
-        <>
+        <div className="productos">
             <ItemDetail item={product}/>
-        </>
+        </div>
     )
 }
 

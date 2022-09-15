@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@600&display=swap');
-
-.navbar-contenedor {
-    background-color:  #c6f7dc;
-    height: 100%;
+.baner-text{
+    background-color: #5df745;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
 }
 
 .logoNombre {
@@ -10,37 +11,31 @@
     justify-content: left;
 }
 
-.logoNombre h2 {
-    margin-left: 30px;
-    margin-top: 80px;
-    font-size: 27px;
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
-    color: rgb(0, 0, 0);
-}
-
 .logo{
     width: 150px;
     height: 150px;
     margin-left: 20px;
     border-radius: 100px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .navegacion {
+    margin-top: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
 }
 .navegacion li a {
     text-decoration: none;
     padding: 0 13px; 
     display: block;
-    font-size: 17px;
+    font-size: 19px;
     color: black;
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
 }
 .navegacion li {
     display: inline-block;
@@ -53,5 +48,6 @@
 
 
 .carrito {
-    width: 40px;
+    margin-top: 8px;
+    width: 50px;
 }

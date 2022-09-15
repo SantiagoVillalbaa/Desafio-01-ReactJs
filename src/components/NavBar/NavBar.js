@@ -1,21 +1,26 @@
 import logo from '../../img/logo.jpeg';
 import './NavBar.css';
 import CartWiget from '../CardWiget/CartWiget';
+import { NavLink } from 'react-router-dom';
 
 
 
 const NavBar = () => {
     return (
-        <header className='navbar-contenedor'>
+        <header>
+            <h2 className='baner-text'>Atencion medica para todos</h2>
             <div className='logoNombre'>
-                <img className='logo' src={logo}  alt="logo" />
-                <h2>Atencion medica para todos</h2>
+                <NavLink to={'/'}>
+                    <img className='logo' src={logo}  alt="logo" />
+                </NavLink>
             </div>
             <ul className='navegacion'>
-                <li><a href='#'>Belleza</a></li>
-                <li><a href='#'>Ciudado Personal</a></li>
-                <li><a href='#'>Hogar y Alimentos</a></li>
-                <CartWiget/>
+                <li> <NavLink to={'/category/Belleza'}>Belleza</NavLink></li>
+                <li><NavLink to={'/category/CiudadoPersonal'}>Ciudado Personal</NavLink></li>
+                <li><NavLink to={'/category/HogaryAlimentos'}>Hogar y Alimentos</NavLink></li>
+                <NavLink to={'/carrito'}>
+                    <CartWiget/>
+                </NavLink>
             </ul>
         </header>
     )
