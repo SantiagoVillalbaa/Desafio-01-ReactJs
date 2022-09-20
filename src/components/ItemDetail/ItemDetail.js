@@ -8,6 +8,10 @@ const ItemDetail = ({item}) => {
 
     const[cantidad,setCantidad] = useState(1)
 
+    const handleClick = () =>{
+        console.log(cantidad)
+    }
+
     return (
         <div className="card-productos">
                 <img src={item.image} alt={item.title}/>
@@ -15,7 +19,7 @@ const ItemDetail = ({item}) => {
                 <h3 className="precio-cards">Precio: ${item.price}</h3>
                 <p className="precio-cards">{item.description}</p>
                 <ItemCount setCantidad={setCantidad} cantidad={cantidad} stock={item.stock}/>
-                <Link to={'/cart'}><button className="boton-comprar">Agregar al Carrito</button></Link>
+                <Link to={'/cart'}><button onClick={handleClick} className="boton-comprar">Agregar al Carrito</button></Link>
         </div>
     )
 }
