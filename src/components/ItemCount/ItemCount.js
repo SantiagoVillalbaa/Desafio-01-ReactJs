@@ -1,20 +1,21 @@
-import React, {useState} from 'react'
+/* import React, {useState} from 'react' */
 import './ItemCount.css';
 
 
-const ItemCount = ({stock}) => {
-    const [items, setItems] = useState(0)
+const ItemCount = ({cantidad,setCantidad,stock}) => {
 
-    const sumar = () => items < stock  ? setItems (items + 1) : alert("No hay mas stock")
-    const restar = () => items > 0 ? setItems (items - 1) : alert("Eliga un numero positivo de productos")
+    const sumar =()=>{
+        setCantidad(actualValor=>actualValor+1)
+    }
+    const restar =() =>{
+        setCantidad(actualValor=>actualValor-1)
+    } 
+    
     return (
-        <div className='contador'>
-            <h2>Stock {stock}</h2>
-            <h3>Tengo {items} productos.</h3>
-            <div>
-                <button className='boton-sr' onClick={sumar}>Agregar Item</button>
-                <button className='boton-sr'  onClick={restar}>Eliminar Item</button>
-            </div>
+        <div>
+            <button className="boton-sumar-restar" onClick={sumar} disabled={cantidad>=stock}>+</button>
+                <spam>{cantidad}</spam>
+            <button className="boton-sumar-restar" onClick={restar} disabled={cantidad<1}>-</button>
         </div>
     )
 }

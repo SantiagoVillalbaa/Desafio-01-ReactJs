@@ -24,7 +24,7 @@ const data = [
         stock:8,
         category: 'Belleza',
         description:'Shampoo Garnier Regeneración Extrema x 400 ml',
-        image:'https://farmacityar.vteximg.com.br/arquivos/ids/216768-600-600/163843_shampoo-fructis-oil-repair-botella-x-350-ml_imagen-1.jpg?v=637709539007800000'
+        image:'https://farmacityar.vteximg.com.br/arquivos/ids/228391-600-600/209537_shampoo-fructis-aloe-hidra-bomb-x-200-ml_imagen-1.jpg?v=637986871590770000'
     },
     {
         id:'4',
