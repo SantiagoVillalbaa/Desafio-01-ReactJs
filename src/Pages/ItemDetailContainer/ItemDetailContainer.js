@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     const getProduct = new Promise ((resolve, reject) =>{
             setTimeout(() => {
 
-                resolve(data/* [2] */)
+                resolve(data)
             },2000)
         })
 
