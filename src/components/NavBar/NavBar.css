@@ -42,7 +42,7 @@
 }
 
 .navegacion li a:hover {
-    background-color: #5c59f8;
+    color: #0f0d99;
     transition: 0.4s;
 }
 
@@ -50,4 +50,5 @@
 .carrito {
     margin-top: 8px;
     width: 50px;
+    border: none;
 }

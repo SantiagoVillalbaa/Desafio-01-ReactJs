@@ -5,11 +5,11 @@ import { CartContext } from "./cartContext"
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
 
-    const addToCart =(item, cantidad) =>{
+    const addToCart =(item, quantity) =>{
         if(isInCart(item.id)){
             alert('Ya esta en el carrito')
         } else{
-            setCart([...cart, {...item, cantidad}])
+            setCart([...cart, {...item, quantity}])
         }
     }
     const isInCart = (id) =>{
@@ -31,8 +31,12 @@ export const CartProvider = ({children}) => {
         setCart(nuevoArreglo);
     }
 
+    const total = () =>{
+        return cart.reduce((acum, valor) => acum + valor.quantity * valor.price, 0)
+    }
+
     return (
-        <CartContext.Provider value={{cart, addToCart, clear, removeItem}}>
+        <CartContext.Provider value={{cart, addToCart, clear, removeItem, total}}>
             {children}
         </CartContext.Provider>
     )

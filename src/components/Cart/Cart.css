@@ -1,0 +1,14 @@
+.carrito{
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 80%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titulo-carrito{
+    margin-top: 90px;
+}
+
+.cart-carrito{
+    margin-top: 50px;
+}
