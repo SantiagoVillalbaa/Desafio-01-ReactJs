@@ -3,7 +3,8 @@
 
 .card-productos{
     margin-left: 35%;
-    width: 350px;
+    width: cover;
+    height: 440px;
     padding-top: 30px;
     margin-top: 50px;
     transition: all 400ms ease;
@@ -21,12 +22,14 @@
 
 
 .titulo-cards{
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 900;
     font-family: 'Oswald', sans-serif;
 }
 
 .precio-cards{
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 .boton-carrito{
@@ -42,3 +45,17 @@
     margin-left: 3%;
     margin-right: 3%;
 }
+
+.boton-volver{
+    background-color: #5df745;
+    border: 4px solid #5df745;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.spinner-detail{
+    margin-top: 40px;
+    margin-left: 50%;
+}
+

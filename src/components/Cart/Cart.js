@@ -20,42 +20,22 @@ const Cart = () => {
                 <>
                     {cart.map((item) =>(
                         <div className="cart-carrito" key={item.id}>
-                            <img width={'200px'} src={item.image} alt={item.title}/>
-                            <h2>{item.title}</h2>
-                            <h3> Precio unidad: ${item.price}</h3>
-                            <h3> Cantidad: {item.quantity}</h3>
-                            <h3>Precio total: ${item.quantity >1 ? item.price * item.quantity : item.price}</h3>
-                            <button onClick={() => removeItem (item.id)}>Eliminar producto</button>
+                            <img width={'150px'} src={item.image} alt={item.title}/>
+                            <h2 className="titulo-card-carrito">{item.title}</h2>
+                            <h3 className="card-carrito"> Precio unidad: ${item.price}</h3>
+                            <h3 className="card-carrito"> Cantidad: {item.quantity}</h3>
+                            <h3 className="card-carrito">SubTotal: ${item.quantity >1 ? item.price * item.quantity : item.price}</h3>
+                            <button className="boton-eliminar" onClick={() => removeItem (item.id)}>Eliminar producto</button>
                         </div>
                         
                     ))}
                     <div>
-                        <h2>Total: $ {total()}</h2>
-                        <button onClick={() => clear()}>Limpiar carrito</button>
+                        <h2 className="titulo-total">Total: $ {total()}</h2>
+                        <button className="boton-eliminar" onClick={() => clear()}>Limpiar carrito</button>
                     </div>
                 </>
             )}
         </div>
-
-        /* <div>
-            {cart.length === 0 ? (
-            <>
-                <h2>No hay productos en tu carrito</h2>
-                <Link to={'/'}>Volver a Comprar</Link>
-            </>) 
-            : (<>
-                {cart.map((item) =>(
-                <div key={item.id}>
-                    <img src={item.image} alt={item.title}/>
-                    <h3>{item.title}</h3>
-                    <p>{item.price}</p>
-                    <p>{item.quantity}</p>
-                    <button onClick={() => removeItem (item.id)}>Eliminar producto</button>
-                </div>
-            ))}
-            </>) }
-
-        </div> */
         
     )
 }

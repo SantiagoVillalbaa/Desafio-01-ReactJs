@@ -2,21 +2,22 @@ import data from '../../components/ItemListContainer/mockData'
 import { useEffect, useState } from 'react'
 import ItemList from '../../components/ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-/* import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore';
- */
+import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore';
+
+
 const ItemListContainer = () => {
 
     const{categoryName} = useParams()
 
     const [productList, setProductList] = useState([])
 
-    /* const getProducts =  () =>{
+    const getProducts =  () =>{
         const db = getFirestore()
         const querySnapshot =  collection(db, 'items')
         if (categoryName) {
             const queryFilter = query(
                 querySnapshot,
-                where("category", "==", categoryName)
+                where("categoryId", "==", categoryName)
             )
             getDocs(queryFilter).then((response) => {
                 const data = response.docs.map((doc) => {
@@ -38,11 +39,11 @@ const ItemListContainer = () => {
         setTimeout(() => {
             getProducts()
         }, 1000)
-    }, [categoryName])
- */
+    }, [categoryName]) 
 
 
-    useEffect(() => {
+
+    /* useEffect(() => {
         getProducts.then((response) => {
             if(categoryName) {
                 setProductList(response.filter((item) => item.category === categoryName))
@@ -58,7 +59,7 @@ const ItemListContainer = () => {
 
                 resolve(data)
             },2000)
-        })
+        }) */
 
     return (
         <>

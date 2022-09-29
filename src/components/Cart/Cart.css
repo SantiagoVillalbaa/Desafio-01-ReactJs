@@ -7,8 +7,39 @@
 
 .titulo-carrito{
     margin-top: 90px;
+    font-weight: 900;
 }
 
 .cart-carrito{
     margin-top: 50px;
+}
+
+.titulo-card-carrito{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.card-carrito{
+    font-weight: 900;
+    font-size: 17px;
+}
+
+
+.boton-eliminar{
+    background-color: #5df745;
+    border: 4px solid #5df745;
+    color: black;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: cover;
+}
+
+.titulo-total{
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 25px;
 }

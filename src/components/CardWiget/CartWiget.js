@@ -6,7 +6,7 @@ const CartWiget = () => {
     const {cart} = useContext(CartContext)
     return(
         <button className='carrito'>
-            <a className='carrito-prueba'><FaShoppingCart/></a>
+            <FaShoppingCart/>
             <span>{cart.length}</span>
         </button>
     )

@@ -1,7 +1,7 @@
 /* import React, {useState} from 'react' */
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
-import './ItemCount.css';
+import './ItemCount.css'
 
 
 const ItemCount = ({cantidad,setCantidad,stock}) => {
@@ -16,7 +16,7 @@ const ItemCount = ({cantidad,setCantidad,stock}) => {
     return (
         <div>
             <button className="boton-sumar-restar" onClick={sumar} disabled={cantidad>=stock}><FaPlus/></button>
-                <spam>{cantidad}</spam>
+                <spam className='cantidad'>{cantidad}</spam>
             <button className="boton-sumar-restar" onClick={restar} disabled={cantidad<1}><FaMinus/></button>
         </div>
     )

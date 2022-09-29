@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import data from "../../components/ItemListContainer/mockData";
 import { useParams } from "react-router-dom";
-/* import {getFirestore, doc, getDoc} from 'firebase/firestore'; */
+import {getFirestore, doc, getDoc} from 'firebase/firestore'; 
 
 
 
@@ -11,16 +11,26 @@ const ItemDetailContainer = () => {
     
     const [product, setProduct] = useState([])
 
-   /*  const db = getFirestore()
+    const db = getFirestore()
 
-    const queryDoc = doc(db, 'items', '6q2fc6TgEn7sNqjVU0dJ')
-    getDoc(queryDoc).then(res =>{
-        console.log(res.id)
-        console.log(res.data())
-    }).catch(err => console.log(err))
- */
+    const getProduct = ()=>{
+        const queryDoc = doc(db, 'items', id)
+
+        getDoc(queryDoc).then(res =>{
+            console.log(res.id)
+            console.log(res.data())
+            setProduct({ id: res.id, ...res.data() })
+        }).catch(err => console.log(err))
+    }
 
     useEffect(() => {
+        setTimeout(() => {
+            getProduct()
+        }, 0)
+    }, [id])
+    
+    
+    /* useEffect(() => {
         getProduct.then((response) => {
             const dataFiltrada =response.filter((item)=> item.id === id)
             setProduct(...dataFiltrada)
@@ -33,7 +43,7 @@ const ItemDetailContainer = () => {
 
                 resolve(data)
             },2000)
-        })
+        }) */
 
     return (
         <div className="productos">
