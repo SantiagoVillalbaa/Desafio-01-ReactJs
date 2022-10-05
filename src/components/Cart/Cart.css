@@ -3,6 +3,8 @@
     margin-right: 10%;
     width: 80%;
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
 .titulo-carrito{
@@ -26,6 +28,20 @@
 
 
 .boton-eliminar{
+    background-color: #5df745;
+    border: 4px solid #5df745;
+    color: black;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: cover;
+}
+
+.boton-orden{
+    margin-top: 78px;
     background-color: #5df745;
     border: 4px solid #5df745;
     color: black;
