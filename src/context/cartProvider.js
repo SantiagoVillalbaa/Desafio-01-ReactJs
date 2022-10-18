@@ -1,13 +1,13 @@
 import {useState } from "react"
 import { CartContext } from "./cartContext"
-
+import Swal from "sweetalert2";
+import swal from 'sweetalert';
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
 
     const addToCart =(item, quantity) =>{
         if(isInCart(item.id)){
-            alert('Ya esta en el carrito')
         } else{
             setCart([...cart, {...item, quantity}])
         }
@@ -28,7 +28,8 @@ export const CartProvider = ({children}) => {
             nuevoArreglo.push(product)
         }
         })
-        setCart(nuevoArreglo);
+        swal("Producto eliminado","", "success")
+        setCart(nuevoArreglo)
     }
 
     const total = () =>{

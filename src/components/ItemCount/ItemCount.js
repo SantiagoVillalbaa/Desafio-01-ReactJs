@@ -16,7 +16,7 @@ const ItemCount = ({cantidad,setCantidad,stock}) => {
     return (
         <div>
             <button className="boton-sumar-restar" onClick={sumar} disabled={cantidad>=stock}><FaPlus/></button>
-                <spam className='cantidad'>{cantidad}</spam>
+                <span className='cantidad'>{cantidad}</span>
             <button className="boton-sumar-restar" onClick={restar} disabled={cantidad<1}><FaMinus/></button>
         </div>
     )

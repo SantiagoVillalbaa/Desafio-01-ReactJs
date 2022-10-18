@@ -3,17 +3,18 @@
 
 .card-productos{
     color: black;
-    width: 350px;
+    width: 300px;
     padding-top: 30px;
     margin-top: 20px;
-    transition: all 400ms ease;
+    transition: all 400ms ease; 
     font-family: 'Oswald', sans-serif;
 }
 
 .card-productos:hover{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
-    transform: translateY(-3%);
+    transform: translateY(-3%); 
 }
+
 .card-productos img{
     width: 180px;
     height: auto;
@@ -42,4 +43,5 @@
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }

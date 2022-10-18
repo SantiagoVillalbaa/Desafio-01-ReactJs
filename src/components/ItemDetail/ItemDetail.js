@@ -4,8 +4,8 @@ import ItemCount from "../ItemCount/ItemCount";
 import { useState, useContext, useEffect } from 'react';
 import { CartContext } from '../../context/cartContext';
 import { Spinner } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Swal from "sweetalert2";
 
 
 const ItemDetail = ({item}) => {
@@ -28,17 +28,34 @@ const ItemDetail = ({item}) => {
     function onAdd (item){
         addToCart(item, cantidad)
         setCondicion(false)
-    }
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        Toast.fire({
+            icon: 'success',
+            background: '#fff',
+            color:'black',
+            width: 'cover',
+            title: `${item.title} agregado al carrito`
+        })  
+}
 
-    /* const handleClick = () =>{
-        console.log(cantidad)
-    } */
+
 
     return (
         <>
+            <Link to={'/'}><button className='boton-volver'>Volver al menu</button></Link>
             {cargando ? <Spinner className='spinner-detail' color='dark'/>
-            : <div className="card-productos">
-                <Link to={'/'}><button className='boton-volver'>Volver</button></Link>
+            : 
+            <div className="card-productos">
                 <img src={item.image} alt={item.title}/>
                 <h2 className="titulo-cards">{item.title}</h2>
                 <h3 className="precio-cards">Precio: ${item.price}</h3> 
@@ -51,7 +68,7 @@ const ItemDetail = ({item}) => {
                     </Link>
                     : ''}
                     <button onClick={() => onAdd(item)} className="boton-carrito">Agregar al Carrito</button>
-                </div>
+                </div> 
             </div>
             }
         </>

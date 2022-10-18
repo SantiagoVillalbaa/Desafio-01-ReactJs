@@ -2,7 +2,7 @@
 
 
 .card-productos{
-    margin-left: 35%;
+    margin-left: 30%;
     width: cover;
     height: 440px;
     padding-top: 30px;
@@ -44,6 +44,7 @@
     text-transform: uppercase;
     margin-left: 3%;
     margin-right: 3%;
+    font-weight: bold;
 }
 
 .boton-volver{
@@ -52,10 +53,14 @@
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 14%;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .spinner-detail{
     margin-top: 40px;
-    margin-left: 50%;
+    margin-left: 40%;
 }
 

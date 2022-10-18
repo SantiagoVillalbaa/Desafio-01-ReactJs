@@ -1,3 +1,29 @@
+# FARMASALUD 
+
+Proyecto final del curso de React Js de CoderHouse
+
+## Autor: Santiago Villalba: https://www.linkedin.com/in/santiago-villalba-desarrolador-web/
+
+### Video demostracion del sitio :
+
+Farmasalud.mp4
+
+### Librerias utilizadas:
+* ReactJs
+* Create React App
+* Toastify-Js
+* SweetAlert
+* SweetAlert2
+* React Icons
+* React Router 
+* FireBase
+* Bootstrap
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

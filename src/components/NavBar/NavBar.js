@@ -18,7 +18,7 @@ const NavBar = () => {
                 <li> <NavLink to={'/category/Belleza'}>Belleza</NavLink></li>
                 <li><NavLink to={'/category/CiudadoPersonal'}>Ciudado Personal</NavLink></li>
                 <li><NavLink to={'/category/HogaryAlimentos'}>Hogar y Alimentos</NavLink></li>
-                <NavLink to={'/cart'}>
+                <NavLink style={{textDecoration: "none"}} to={'/cart'}>
                     <CartWiget/>
                 </NavLink>
             </ul>
