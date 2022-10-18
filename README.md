@@ -6,7 +6,7 @@ Proyecto final del curso de React Js de CoderHouse
 
 ### Video demostracion del sitio :
 
-[](https://photos.google.com/photo/AF1QipNSvQff-fHJ2ZybjPQFUW4tAVXH0L_TKQtubV2k)
+Farmasalud.gif
 
 
 ### Librerias utilizadas:
