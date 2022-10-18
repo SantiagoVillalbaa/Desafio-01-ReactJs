@@ -6,8 +6,7 @@ Proyecto final del curso de React Js de CoderHouse
 
 ### Video demostracion del sitio :
 
-Farmasalud.mp4
-C:\Users\Santi\Videos\Desktop\Farmasalud.mp4
+[](../../../../../../Videos/Desktop/Farmasalud.mp4)
 
 
 ### Librerias utilizadas:
