@@ -2,7 +2,8 @@
 
 Proyecto final del curso de React Js de CoderHouse
 
-## Autor: Santiago Villalba: https://www.linkedin.com/in/santiago-villalba-desarrolador-web/
+## Autor: 
+Santiago Villalba: https://www.linkedin.com/in/santiago-villalba-desarrolador-web/
 
 ### Video demostracion del sitio :
 
