@@ -5,9 +5,7 @@ Proyecto final del curso de React Js de CoderHouse
 ## Autor: Santiago Villalba: https://www.linkedin.com/in/santiago-villalba-desarrolador-web/
 
 ### Video demostracion del sitio :
-
-[](../../../../../../Videos/Desktop/Farmasalud.mp4)
-
+![](../../../../../../Downloads/Farmasalud.gif)
 
 ### Librerias utilizadas:
 * ReactJs
