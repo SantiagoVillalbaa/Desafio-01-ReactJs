@@ -1,4 +1,3 @@
-import data from "../ItemListContainer/mockData"
 import './Item.css'
 
 
