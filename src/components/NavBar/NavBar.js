@@ -1,7 +1,7 @@
-import logo from '../../img/logo.jpeg';
-import './NavBar.css';
-import CartWiget from '../CardWiget/CartWiget';
-import { NavLink } from 'react-router-dom';
+import logo from '../../img/logo.jpeg'
+import './NavBar.css'
+import CartWiget from '../CardWiget/CartWiget'
+import { NavLink } from 'react-router-dom'
 
 
 
