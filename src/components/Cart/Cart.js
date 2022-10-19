@@ -138,7 +138,7 @@ const Cart = () => {
                             <button className="boton-orden" onClick={createOrder}>Terminar Compra</button>
                         </div>
                     </>
-                )}
+                )}             
             </>
         </>
         

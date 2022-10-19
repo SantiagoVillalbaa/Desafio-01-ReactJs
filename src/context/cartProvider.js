@@ -1,5 +1,5 @@
-import {useState } from "react"
-import { CartContext } from "./cartContext"
+import {useState } from 'react'
+import { CartContext } from './cartContext'
 import swal from 'sweetalert'
 
 export const CartProvider = ({children}) => {

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
-import ItemDetail from "../../components/ItemDetail/ItemDetail"
-import { useParams } from "react-router-dom"
-import {getFirestore, doc, getDoc} from "firebase/firestore"
+import { useEffect, useState } from 'react'
+import ItemDetail from '../../components/ItemDetail/ItemDetail'
+import { useParams } from 'react-router-dom'
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
 
 
 
@@ -27,6 +27,7 @@ const ItemDetailContainer = () => {
             getProduct()
         }, 0)
     }, [id])
+    
     
     return (
         <div className="productos">
