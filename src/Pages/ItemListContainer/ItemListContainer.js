@@ -1,9 +1,8 @@
-import data from '../../components/ItemListContainer/mockData'
 import { useEffect, useState } from 'react'
 import ItemList from '../../components/ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore';
-import { Spinner } from 'reactstrap';
+import {getFirestore, getDocs, collection, query, where} from 'firebase/firestore'
+import { Spinner } from 'reactstrap'
 
 
 const ItemListContainer = () => {
