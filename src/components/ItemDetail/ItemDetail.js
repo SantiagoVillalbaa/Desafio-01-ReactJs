@@ -1,11 +1,11 @@
 import './ItemDetail.css'
-import { Link } from "react-router-dom";
-import ItemCount from "../ItemCount/ItemCount";
-import { useState, useContext, useEffect } from 'react';
-import { CartContext } from '../../context/cartContext';
-import { Spinner } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Swal from "sweetalert2";
+import { Link } from "react-router-dom"
+import ItemCount from "../ItemCount/ItemCount"
+import { useState, useContext, useEffect } from 'react'
+import { CartContext } from '../../context/cartContext'
+import { Spinner } from 'reactstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Swal from "sweetalert2"
 
 
 const ItemDetail = ({item}) => {
